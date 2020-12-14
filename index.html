@@ -13,8 +13,20 @@
 <body>
     <div class="container">
         <div class="navigation">
-            <nav class="navigation__mobile">
+            <!-- <nav class="navigation__mobile">
                 <i class="fas fa-bars navigation__mobile-icon"></i> 
+            </nav> -->
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle" aria-label="none">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="./tickets.html" class="navigation__link"><span>02</span>Tickets</a></li>
+                    <li class="navigation__item"><a href="./about.html" class="navigation__link"><span>03</span>About</a></li>
+                </ul>
             </nav>
         </div>
         <div class="head">
@@ -65,8 +77,35 @@
                     <button type="button" class="btn">REGISTER</button>
                 </div>
             </div>
-            <div class="organizers">
-
+            <div class="main__organizers">
+                <div class="main__program-heading">
+                    <h3>Organizers</h3>
+                </div>
+                <div class="main__organizers-body">
+                    <div class="main__organizers-image">
+                        <img class="main__organizers-image-1" src="./assets/check-pattern2.png" alt="pattern">
+                        <img class="main__organizers-image-2" src="./assets/Sebastian-Adewale.jpg" alt="Adewale">
+                    </div>
+                    <div class="main__organizers-text">
+                        <h4 class="main__organizers-header">Sebastian Adewale</h4>
+                        <em class="main__organizers-sub">CEO of Fesoroxx / Event planner</em>
+                        <p class="main__organizers-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, mollitia. Tenetur quisquam nulla.</p>
+                    </div>                    
+                </div>
+                <div class="main__organizers-body">
+                    <div class="main__organizers-image">
+                        <img class="main__organizers-image-1" src="./assets/check-pattern2.png" alt="pattern">
+                        <img class="main__organizers-image-2" src="./assets/Isabella-Paisley.jpg" alt="Isabella-Paisley">
+                    </div>
+                    <div class="main__organizers-text">
+                        <h4 class="main__organizers-header">Isabella Paisley</h4>
+                        <em class="main__organizers-sub">Stage Manager</em>
+                        <p class="main__organizers-about">Reiciendis nisi ipsum saepe perspiciatis architecto. Deleniti, quo veritatis minima quas  nihil animi, sed vero cupiditate.</p>
+                    </div>                
+                </div>
+                <div>
+                    <button type="button" class="btn-1">MORE<span>V</span></button>
+                </div>
             </div>
         </main>    
     </div>

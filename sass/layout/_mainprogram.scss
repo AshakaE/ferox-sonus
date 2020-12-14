@@ -49,11 +49,14 @@
         &__header {
             padding: 0 1rem;
             color: $color-secondary;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
         }
 
         &__text {
             padding: 0 1rem;
+            font-size: 1rem;
+            line-height: 1.3rem;
         }
 
         &__1 {
