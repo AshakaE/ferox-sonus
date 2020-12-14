@@ -1,0 +1,71 @@
+.main__program {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../assets/second-bg.jpg");
+    background-size: 100%;
+    position: relative;
+    color: white;
+
+    &-heading {
+        margin: 1.5rem 0;
+
+        h3 {
+            word-spacing: .3rem;
+            font-weight: 400;
+            font-size: 1.5rem;
+            display: inline-block;
+            padding-bottom: .5rem;
+            position: relative;
+
+            &:after{
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 10px;
+                bottom: 0;
+                left: 25%;
+                border-bottom: 2px solid $color-secondary;
+            }
+        }
+
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+
+        &__icon {
+            padding: 0 1rem;
+            font-size: 1.8rem;
+            --fa-primary-color: white;
+            --fa-secondary-color: rgb(236, 82, 66);
+             --fa-secondary-opacity: 1.0;
+            
+        }
+
+        &__header {
+            padding: 0 1rem;
+            color: $color-secondary;
+            font-size: 1.3rem;
+        }
+
+        &__text {
+            padding: 0 1rem;
+        }
+
+        &__1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1rem 0;
+            flex-shrink: 1;
+            background-color: #ffffff1f;
+            margin-bottom: 1rem;
+        }
+
+
+    }
+}

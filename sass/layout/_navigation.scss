@@ -1,0 +1,18 @@
+.navigation {
+    height: 15vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.87),rgba(255, 255, 255, 0.87)), url("../assets/concert.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    &__mobile {
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+
+        &-icon {
+            font-size: 2.3rem;
+            color: $color-tertiary;
+        }
+    }
+}

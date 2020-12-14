@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 1.6rem; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #272a31; }
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #ec5242;
+  color: white;
+  border: none; }
+
+.head {
+  height: 55vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../assets/top-bg.jpg");
+  background-size: 100%;
+  background-position: center; }
+  .head-top {
+    padding: 0 1rem; }
+    .head-top__text-1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #ec5242;
+      margin-top: -.4rem; }
+    .head-top__text-2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      line-height: 2.5rem;
+      text-align: left;
+      background-image: url("../assets/text-cut2.jpg");
+      background-size: 50%;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      display: inline-block; }
+    .head-top__description {
+      border: 3px solid white;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background-color: #F7F7F7;
+      color: #272a31;
+      line-height: 1.8rem; }
+    .head-top__date {
+      margin-top: 1rem;
+      padding: .5rem .7rem; }
+      .head-top__date span {
+        font-weight: 900;
+        font-size: 1.9rem;
+        color: #272a31; }
+      .head-top__date p {
+        font-size: 1.2rem;
+        color: #272a31;
+        font-weight: 400; }
+
+.main__program {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/second-bg.jpg");
+  background-size: 100%;
+  position: relative;
+  color: white; }
+  .main__program-heading {
+    margin: 1.5rem 0; }
+    .main__program-heading h3 {
+      word-spacing: .3rem;
+      font-weight: 400;
+      font-size: 1.5rem;
+      display: inline-block;
+      padding-bottom: .5rem;
+      position: relative; }
+      .main__program-heading h3:after {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 10px;
+        bottom: 0;
+        left: 25%;
+        border-bottom: 2px solid #ec5242; }
+  .main__program-body {
+    display: flex;
+    flex-direction: column; }
+    .main__program-body__icon {
+      padding: 0 1rem;
+      font-size: 1.8rem;
+      --fa-primary-color: white;
+      --fa-secondary-color: rgb(236, 82, 66);
+      --fa-secondary-opacity: 1.0; }
+    .main__program-body__header {
+      padding: 0 1rem;
+      color: #ec5242;
+      font-size: 1.3rem; }
+    .main__program-body__text {
+      padding: 0 1rem; }
+    .main__program-body__1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 0;
+      flex-shrink: 1;
+      background-color: #ffffff1f;
+      margin-bottom: 1rem; }
+
+.navigation {
+  height: 15vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87)), url("../assets/concert.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; }
+  .navigation__mobile {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem; }
+    .navigation__mobile-icon {
+      font-size: 2.3rem;
+      color: #272a31; }
