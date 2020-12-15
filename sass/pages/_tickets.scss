@@ -55,6 +55,20 @@
             padding: .5rem 1.5rem;
             font-size: 1rem;
             font-weight: bold;
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            -ms-transition: all .2s;
+            -o-transition: all .2s;
+            
+                &:hover {
+                cursor: pointer;
+                background-color: $color-secondary;
+                color: white;
+                padding: .5rem 1.5rem;
+                font-size: 1rem;
+                font-weight: bold
+            }
         }
     }
 }

@@ -1,3 +1,74 @@
+.navbar {
+
+    &__top {
+        background-color: $color-tertiary;
+        color: white;
+        display: flex;
+        padding: .5rem 2rem;
+        justify-content: flex-end;
+        font-size: .7rem;
+
+        &--icons {
+            padding-right: .5rem;
+
+            i {
+                padding-right: 1rem;
+            }
+        }
+
+        p:not(:last-child) {
+            padding-right: 1.2rem;
+        }
+    }
+
+    &__bottom {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        align-items: center;
+
+        &--logo {
+            img {
+                width: 180px;
+            }
+        }
+
+        &--list {
+            display: flex;
+            list-style: none;
+            
+        }
+
+        &--item {
+            padding-left: 1.5rem;
+            
+            a {
+                text-decoration: none;
+                color: $color-tertiary;
+                transition: all .2s;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -ms-transition: all .2s;
+                -o-transition: all .2s;
+
+                &:hover,
+                &:active {
+                    color: $color-secondary;
+                    border: 2px solid $color-secondary;
+                    padding: .5rem;
+                    border-radius: 25px;
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    -ms-border-radius: 25px;
+                    -o-border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+
 .navigation {
     height: 15vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.87),rgba(255, 255, 255, 0.87)), url("../assets/concert.jpg");
@@ -161,5 +232,9 @@
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
+    }
+
+    @media screen and (min-width: $bp-desk){
+        display: none;
     }
 }

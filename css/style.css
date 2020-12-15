@@ -215,6 +215,51 @@ body {
       width: 120px;
       padding-left: 1.7rem; }
 
+.navbar__top {
+  background-color: #272a31;
+  color: white;
+  display: flex;
+  padding: .5rem 2rem;
+  justify-content: flex-end;
+  font-size: .7rem; }
+  .navbar__top--icons {
+    padding-right: .5rem; }
+    .navbar__top--icons i {
+      padding-right: 1rem; }
+  .navbar__top p:not(:last-child) {
+    padding-right: 1.2rem; }
+
+.navbar__bottom {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center; }
+  .navbar__bottom--logo img {
+    width: 180px; }
+  .navbar__bottom--list {
+    display: flex;
+    list-style: none; }
+  .navbar__bottom--item {
+    padding-left: 1.5rem; }
+    .navbar__bottom--item a {
+      text-decoration: none;
+      color: #272a31;
+      transition: all .2s;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s; }
+      .navbar__bottom--item a:hover, .navbar__bottom--item a:active {
+        color: #ec5242;
+        border: 2px solid #ec5242;
+        padding: .5rem;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px; }
+
 .navigation {
   height: 15vh;
   background-image: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87)), url("../assets/concert.jpg");
@@ -325,6 +370,9 @@ body {
   .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     transform: rotate(-135deg); }
+  @media screen and (min-width: 768px) {
+    .navigation {
+      display: none; } }
 
 .about {
   height: 80vh;
@@ -427,4 +475,16 @@ body {
   border: 1px solid #ec5242;
   padding: .5rem 1.5rem;
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s; }
+  .tickets__button .btn-2:hover {
+    cursor: pointer;
+    background-color: #ec5242;
+    color: white;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold; }
