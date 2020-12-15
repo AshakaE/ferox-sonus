@@ -1,17 +1,38 @@
 // COLOR
 $color-primary: #d3d3d3;
-$color-primary-light: #e0e0e0;
+$color-primary-light: #f5f5f5;
 $color-secondary: #ec5242;
 $color-tertiary: #272a31;
 
 // FONT
 $default-font-size: 1.6rem;
+$default-font-small: 0.8rem;
+$default-font-medium: 1.2rem;
 
 // BREAKPOINTS
-
-$bp-mobile: 570px;
+$bp-small: 320px;
+$bp-medium: 570px;
+$bp-mobile: 767px;
 $bp-desk: 768px;
+$bp-desk2: 900px;
 
 //UTILITIES
+@media screen and (min-width: $bp-desk) {
+  .hide-desk {
+    display: none;
+  }
 
+  .show-desk {
+    display: block;
+  }
+}
 
+@media screen and (max-width: $bp-mobile) {
+  .hide-mob {
+    display: none;
+  }
+
+  .show-mob {
+    display: block;
+  }
+}

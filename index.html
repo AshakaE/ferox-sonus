@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
 </head>
 <body>
-    <div class="container">
+    <div class="">
         <nav class="navbar">
             <div class="navbar__top">
                 <div class="navbar__top--icons">
@@ -35,6 +35,7 @@
             </div>
         </nav>
         <div class="navigation">
+            <div class="container">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle" aria-label="none">
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
@@ -47,9 +48,10 @@
                     <li class="navigation__item"><a href="./about.html" class="navigation__link"><span>03</span>About</a></li>
                 </ul>
             </nav>
+            </div>
         </div>
         <div class="head">
-            <header>
+            <header class="container">
                 <div class="head-top">
                     <div class="head-top__text">
                         <h5 class="head-top__text-1">"Hello! Revellers"</h5>              
@@ -67,19 +69,19 @@
         </div>
         <main class="main">
             <div class="main__program">
-                <div class="main__program-heading">
+                <div class="main__program-heading container">
                     <h3>Main Program</h3>
                 </div>
-                <div class="main__program-body">
+                <div class="main__program-body container">
                     <div class="main__program-body__1">
                         <i class="main__program-body__icon fad fa-theater-masks"></i>
-                        <h4 class="main__program-body__header">Performing Acts</h4>
+                        <h4 class="main__program-body__header">Acts</h4>
                         <p class="main__program-body__text">View our list of performing acts for the coming festivals.</p>
                     </div>
                     <div class="main__program-body__1">
                         <i class="fad fa-webcam main__program-body__icon"></i>
                         <h4 class="main__program-body__header">Conference</h4>
-                        <p class="main__program-body__text">The digital experience will feature conference keynotes and sessions, screenings, showcases, networking, and exhibitions.</p>
+                        <p class="main__program-body__text">The digital experience will feature screenings and exhibitions.</p>
                     </div>
                     <div class="main__program-body__1">
                         <i class="main__program-body__icon fad fa-handshake"></i>
@@ -89,42 +91,124 @@
                     <div class="main__program-body__1">
                         <i class="main__program-body__icon fad fa-presentation"></i>
                         <h4 class="main__program-body__header">Exhibitions</h4>
-                        <p class="main__program-body__text">Top creative organizations, innovative industry leaders, small businesses, and emerging startups from all over the world will come together for this online expo.</p>
+                        <p class="main__program-body__text">Top creatives from all over the world will come together for this online expo.</p>
                     </div>
                 </div>
-                <div class="main__program-button">
+                <div class="main__program-button container">
                     <button type="button" class="btn">REGISTER</button>
                 </div>
             </div>
-            <div class="main__organizers">
+            <div class="main__organizers container">
                 <div class="main__program-heading">
                     <h3>Organizers</h3>
                 </div>
+                <div class="desk-flex">
+                <div class="desk-flex-1">
                 <div class="main__organizers-body">
                     <div class="main__organizers-image">
-                        <img class="main__organizers-image-1" src="./assets/check-pattern2.png" alt="pattern">
+                        <img class="main__organizers-image-1 hide-desk" src="./assets/check-pattern2.png" alt="pattern">
+                        <img class="main__organizers-image-1 hide-mob" src="./assets/check-pattern.png" alt="pattern">  
                         <img class="main__organizers-image-2" src="./assets/Sebastian-Adewale.jpg" alt="Adewale">
                     </div>
                     <div class="main__organizers-text">
                         <h4 class="main__organizers-header">Sebastian Adewale</h4>
-                        <em class="main__organizers-sub">CEO of Fesoroxx / Event planner</em>
+                        <em class="main__organizers-sub">Event planner</em>
                         <p class="main__organizers-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, mollitia. Tenetur quisquam nulla.</p>
                     </div>                    
                 </div>
                 <div class="main__organizers-body">
                     <div class="main__organizers-image">
-                        <img class="main__organizers-image-1" src="./assets/check-pattern2.png" alt="pattern">
+                        <img class="main__organizers-image-1 hide-desk" src="./assets/check-pattern2.png" alt="pattern">
+                        <img class="main__organizers-image-1 hide-mob" src="./assets/check-pattern.png" alt="pattern">  
                         <img class="main__organizers-image-2" src="./assets/Isabella-Paisley.jpg" alt="Isabella-Paisley">
                     </div>
                     <div class="main__organizers-text">
                         <h4 class="main__organizers-header">Isabella Paisley</h4>
-                        <em class="main__organizers-sub">Stage Manager</em>
-                        <p class="main__organizers-about">Reiciendis nisi ipsum saepe perspiciatis architecto. Deleniti, quo veritatis minima quas  nihil animi, sed vero cupiditate.</p>
-                    </div>                
+                        <em class="main__organizers-sub">Production Manager</em>
+                        <p class="main__organizers-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, mollitia. Tenetur quisquam nulla.</p>
+                    </div>                    
                 </div>
-                <div>
+                <div class="hide-mob">
+                    <div class="main__organizers-body">
+                        <div class="main__organizers-image">
+                            <img class="main__organizers-image-1 hide-desk" src="./assets/check-pattern2.png" alt="pattern">
+                            <img class="main__organizers-image-1 hide-mob" src="./assets/check-pattern.png" alt="pattern">  
+                            <img class="main__organizers-image-2" src="./assets/Garett-Boyle.jpg" alt="Garett-Boyle">
+                        </div>
+                        <div class="main__organizers-text">
+                            <h4 class="main__organizers-header">Garett Boyle</h4>
+                            <em class="main__organizers-sub">Stage Manager</em>
+                            <p class="main__organizers-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, mollitia. Tenetur quisquam nulla.</p>
+                        </div>                    
+                    </div>
+                </div>
+                </div> 
+                <div class="desk-flex-2 hide-mob">
+                    <div class="main__organizers-body">
+                        <div class="main__organizers-image">
+                            <img class="main__organizers-image-1 hide-desk" src="./assets/check-pattern2.png" alt="pattern">
+                            <img class="main__organizers-image-1 hide-mob" src="./assets/check-pattern.png" alt="pattern">  
+                            <img class="main__organizers-image-2" src="./assets/Ryan-Buchi.jpg" alt="Ryan-Buchi">
+                        </div>
+                        <div class="main__organizers-text">
+                            <h4 class="main__organizers-header">Ryan Buchi</h4>
+                            <em class="main__organizers-sub">Assistant Stage Mangager</em>
+                            <p class="main__organizers-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, mollitia. Tenetur quisquam nulla.</p>
+                        </div>                    
+                    </div>
+                    <div class="main__organizers-body">
+                        <div class="main__organizers-image">
+                            <img class="main__organizers-image-1 hide-desk" src="./assets/check-pattern2.png" alt="pattern">
+                            <img class="main__organizers-image-1 hide-mob" src="./assets/check-pattern.png" alt="pattern">  
+                            <img class="main__organizers-image-2" src="./assets/Renee-Jackson.jpg" alt="Renee">
+                        </div>
+                        <div class="main__organizers-text">
+                            <h4 class="main__organizers-header">Renee Jackson</h4>
+                            <em class="main__organizers-sub">Talent Producer</em>
+                            <p class="main__organizers-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, mollitia. Tenetur quisquam nulla.</p>
+                        </div>                    
+                    </div>
+                    <div class="main__organizers-body">
+                        <div class="main__organizers-image">
+                            <img class="main__organizers-image-1 hide-desk" src="./assets/check-pattern2.png" alt="pattern">
+                            <img class="main__organizers-image-1 hide-mob" src="./assets/check-pattern.png" alt="pattern">  
+                            <img class="main__organizers-image-2" src="./assets/Rose-Palmer.jpg" alt="Rose">
+                        </div>
+                        <div class="main__organizers-text">
+                            <h4 class="main__organizers-header">Rose Palmer</h4>
+                            <em class="main__organizers-sub">Talent Coordinator</em>
+                            <p class="main__organizers-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, mollitia. Tenetur quisquam nulla.</p>
+                        </div>                    
+                    </div>
+                </div>  
+                </div>          
+                <div class="hide-desk">
                     <button type="button" class="btn-1">MORE<span>V</span></button>
                 </div>
+            </div>
+            <div class="hide-mob show-desk">
+            <div class="main__program">
+                <div class="main__program-heading">
+                    <h3>Sponsors</h3>
+                </div>
+                <div class="main__program-body sponsors">
+                        <div class="sponsors__div">
+                            <img class="sponsors__div-logo" src="./assets/redbull.png" alt="redbull">
+                            <img class="sponsors__div-logo" src="./assets/cisco.png" alt="cisco">
+                            <img class="sponsors__div-logo__3" src="./assets/Nestle.png" alt="nestle">
+                            <img class="sponsors__div-logo" src="./assets/airbnb.png" alt="airbnb">
+                        </div>
+                </div>
+            </div>
+            <footer class="footer">
+                    <div class="footer__logo">
+                        <img class="footer__logo-img" src="./assets/fesoroxxtxt.png" alt="fesoroxx footer">
+                    </div>
+                    <div class="footer__text">
+                        <h3>2020 Creative Commons Nigeria. Some rights reserved.</h3>
+                        <p>HTML Capstone Project Microverse</p>
+                    </div>
+            </footer>
             </div>
         </main>    
     </div>

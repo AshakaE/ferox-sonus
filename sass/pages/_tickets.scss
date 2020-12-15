@@ -1,74 +1,102 @@
 .tickets {
+  background-color: $color-primary-light;
 
-    &__body {
-        width: 100%;
+  &__body {
+    width: 100%;
+  }
+
+  &__title {
+    border: 1px solid $color-tertiary;
+    padding: 0.3rem 1.2rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    border-bottom: 1.5px solid $color-primary;
+    padding-bottom: 0.5rem;
+
+    div {
+      padding: 0.3rem 0;
     }
 
-    &__title {
-        border: 1px solid $color-tertiary;
-        padding: .3rem 1.2rem;
-        border-radius: 50px;
-        margin-bottom: 2rem;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
-}
+    @media screen and (min-width: $bp-desk) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      align-items: center;
+      justify-self: center;
+      justify-items: center;
+    }
+  }
 
-    &__option {
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-        border-bottom: 1.5px solid $color-primary;
-        padding-bottom: .5rem;
-        
-        div {
-            padding: .3rem 0;
-        }
+  &__date {
+    color: $color-secondary;
+
+    span {
+      color: $color-tertiary;
+      font-size: 0.7rem;
+      padding-left: 1rem;
+
+      @media screen and (min-width: $bp-desk) {
+        font-size: 0.6rem;
+      }
     }
 
-    &__date{
-        color: $color-secondary;
+    @media screen and (min-width: $bp-desk) {
+      font-size: 0.8rem;
+    }
+  }
 
-        span {
-            color: $color-tertiary;
-            font-size: .7rem;
-            padding-left: 1rem;
-        }
+  &__venue {
+    font-weight: bold;
+
+    em {
+      color: $color-secondary;
+      font-weight: lighter;
+      font-size: 0.8rem;
+
+      @media screen and (min-width: $bp-desk) {
+        font-size: 0.6rem;
+      }
     }
 
-    &__venue {
+    @media screen and (min-width: $bp-desk) {
+      display: flex;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__button {
+    .btn-2 {
+      background-color: white;
+      color: $color-secondary;
+      border: 1px solid $color-secondary;
+      padding: 0.5rem 1.5rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-secondary;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.8rem;
         font-weight: bold;
-
-        em {
-            color: $color-secondary;
-            font-weight: lighter;
-            font-size: .8rem;
-        }
+      }
     }
-
-    &__button {
-        .btn-2 {
-            background-color: white;
-            color: $color-secondary;
-            border: 1px solid $color-secondary;
-            padding: .5rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: all .2s;
-            -webkit-transition: all .2s;
-            -moz-transition: all .2s;
-            -ms-transition: all .2s;
-            -o-transition: all .2s;
-            
-                &:hover {
-                cursor: pointer;
-                background-color: $color-secondary;
-                color: white;
-                padding: .5rem 1.5rem;
-                font-size: 1rem;
-                font-weight: bold
-            }
-        }
-    }
+  }
 }

@@ -1,59 +1,58 @@
 .head {
-    height: 65vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699),rgba(255, 255, 255, 0.699)), url("../assets/top-bg.jpg");
-    background-size: 100%;
-    background-position: center;
-    // position: relative;
+  height: 65vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../assets/top-bg.jpg");
+  background-size: 100%;
+  background-position: center;
+  // position: relative;
 
-    &-top {
-        padding: 0 1rem;
+  &-top {
+    padding: 0 1rem;
 
-        &__text-1 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: $color-secondary;
-            margin-top: -.4rem;
-        }
-
-        &__text-2 {
-            font-size: 2rem;
-            text-transform: uppercase;
-            font-weight: 900;
-            line-height: 2.5rem;
-            text-align: left;
-            background-image: url("../assets/text-cut2.jpg");
-            background-size: 50%;
-            background-position: center;
-            color: transparent;
-            -webkit-background-clip: text;
-            display: inline-block;
-        }
-
-        &__description {
-            border: 3px solid white;
-            margin-top: 1.5rem;
-            padding: 1rem;
-            background-color: $color-primary-light;
-            color: $color-tertiary;
-            line-height: 1.8rem;
-        }
-
-        &__date {
-            margin-top: 1rem;
-            padding: .5rem .7rem;
-
-            span {
-                font-weight: 900;
-                font-size: 1.9rem;
-                color: $color-tertiary;
-            }
-
-            p {
-                font-size: 1.2rem;
-                color: $color-tertiary;
-                font-weight: 400;
-            }
-        }
+    &__text-1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $color-secondary;
+      margin-top: -0.4rem;
     }
-}
 
+    &__text-2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      line-height: 2.5rem;
+      text-align: left;
+      background-image: url("../assets/text-cut2.jpg");
+      background-size: 50%;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      display: inline-block;
+    }
+
+    &__description {
+      border: 3px solid white;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background-color: $color-primary-light;
+      color: $color-tertiary;
+      line-height: 1.8rem;
+    }
+
+    &__date {
+      margin-top: 1rem;
+      padding: 0.5rem 0.7rem;
+
+      span {
+        font-weight: 900;
+        font-size: 1.9rem;
+        color: $color-tertiary;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $color-tertiary;
+        font-weight: 400;
+      }
+    }
+  }
+}
