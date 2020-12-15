@@ -13,6 +13,7 @@ A Concert Webpage(s) for [Fesoroxx](https://ashakae.github.io/ferox-sonus/) desi
 - VS Code
 - Git and Github
 - Sass
+- Adobe Illustrator
 
 
 ## Author
