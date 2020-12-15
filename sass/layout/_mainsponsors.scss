@@ -1,0 +1,16 @@
+.sponsors {
+
+    &__div {
+        width: 100%;
+        margin: 1rem 0;
+
+        &-logo {
+            max-width: 170px;
+            padding-left: 1.7rem;
+            &__3 {
+                width: 120px;
+                padding-left: 1.7rem;
+            }
+        }
+    }
+}
