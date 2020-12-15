@@ -384,3 +384,47 @@ body {
     border: 1px solid #e0e0e0; }
   .about-top__logo {
     width: 35%; }
+
+.tickets__body {
+  width: 100%; }
+
+.tickets__title {
+  border: 1px solid #272a31;
+  padding: .3rem 1.2rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px; }
+
+.tickets__option {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  border-bottom: 1.5px solid #d3d3d3;
+  padding-bottom: .5rem; }
+  .tickets__option div {
+    padding: .3rem 0; }
+
+.tickets__date {
+  color: #ec5242; }
+  .tickets__date span {
+    color: #272a31;
+    font-size: .7rem;
+    padding-left: 1rem; }
+
+.tickets__venue {
+  font-weight: bold; }
+  .tickets__venue em {
+    color: #ec5242;
+    font-weight: lighter;
+    font-size: .8rem; }
+
+.tickets__button .btn-2 {
+  background-color: white;
+  color: #ec5242;
+  border: 1px solid #ec5242;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold; }
