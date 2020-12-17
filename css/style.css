@@ -780,18 +780,18 @@ label {
 }
 
 .dark {
-  background-color: #a3a3a3;
-  border: 1px solid #fff;
+  background-color: #dfdfdf;
+  border: 1px solid #e6e6e6;
 }
 
 .midark {
-  background-color: #ccc;
-  border: 1px solid #fff;
+  background-color: white;
+  border: 1px solid #e6e6e6;
 }
 
 .light {
-  background-color: #ececec;
-  border: 1px solid #fff;
+  background-color: white;
+  border: 1px solid #e6e6e6;
 }
 
 .about {
