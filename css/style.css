@@ -105,24 +105,31 @@ body {
   width: 50%;
 }
 
+@media screen and (max-width: 570px) {
+  .footer__logo {
+    width: 30%;
+  }
+}
+
 .footer__logo-img {
   width: 200px;
 }
 
 @media screen and (min-width: 320px) {
   .footer__logo-img {
-    width: 100px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .footer__logo-img {
-    width: 150px;
+    width: 110px;
   }
 }
 
 .footer__text {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .footer__text {
+    padding-left: 0.2rem;
+    font-size: 0.45rem;
+  }
 }
 
 .head {
@@ -158,7 +165,7 @@ body {
 }
 
 .head-top__description {
-  border: 3px solid white;
+  border: 3px solid transparent;
   margin-top: 1.5rem;
   padding: 1rem;
   background-color: #f5f5f5;
@@ -310,7 +317,8 @@ body {
   margin: 1rem 0;
 }
 
-.main__program-heading h3 {
+.main__program-heading h1,
+.main__program-heading h2 {
   word-spacing: 0.3rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -319,7 +327,8 @@ body {
   position: relative;
 }
 
-.main__program-heading h3::after {
+.main__program-heading h1::after,
+.main__program-heading h2::after {
   content: "";
   position: absolute;
   width: 40%;
@@ -395,6 +404,10 @@ body {
   }
 }
 
+.sponsors {
+  text-align: center;
+}
+
 .sponsors__div {
   width: 100%;
   margin: 1rem 0;
@@ -405,9 +418,21 @@ body {
   padding-left: 1.7rem;
 }
 
+@media screen and (min-width: 320px) {
+  .sponsors__div-logo {
+    width: 20%;
+  }
+}
+
 .sponsors__div-logo__3 {
   width: 120px;
   padding-left: 1.7rem;
+}
+
+@media screen and (max-width: 570px) {
+  .sponsors__div-logo__3 {
+    width: 80px;
+  }
 }
 
 .navbar__top {
@@ -427,12 +452,16 @@ body {
   padding-right: 1rem;
 }
 
+.grid-container p {
+  text-align: center;
+}
+
 .about__brand p {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .about-past__desp p {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .about-top__contact p {
@@ -588,12 +617,6 @@ body {
   margin-top: 1rem;
 }
 
-.tickets__date span {
-  color: #272a31;
-  font-size: 0.7rem;
-  padding-left: 1rem;
-}
-
 .navigation__link:link,
 .navigation__link:visited {
   display: inline-block;
@@ -670,81 +693,28 @@ body {
   background-color: #f5f5f5;
 }
 
-.tickets__body {
-  width: 100%;
-}
-
 .tickets__title {
+  padding: 0.4rem 1rem;
   border: 1px solid #272a31;
-  padding: 0.3rem 1.2rem;
   border-radius: 50px;
-  margin-bottom: 2rem;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  font-size: 0.7rem;
 }
 
-.tickets__option {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1rem;
-  border-bottom: 1.5px solid #d3d3d3;
-  padding-bottom: 0.5rem;
+.tickets__container {
+  border: 4px solid transparent;
+  border-image: url("../assets/border-img.jpg") 30 round;
+  margin: 1.5rem 0;
 }
 
-.tickets__option div {
-  padding: 0.3rem 0;
+.tickets__item {
+  padding: 0 1.6rem;
 }
 
-@media screen and (min-width: 768px) {
-  .tickets__option {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.tickets__date {
-  color: #ec5242;
-}
-
-@media screen and (min-width: 768px) {
-  .tickets__date span {
-    font-size: 0.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .tickets__date {
-    font-size: 0.8rem;
-  }
-}
-
-.tickets__venue {
-  font-weight: bold;
-}
-
-.tickets__venue em {
-  color: #ec5242;
-  font-weight: lighter;
-  font-size: 0.8rem;
-}
-
-@media screen and (min-width: 768px) {
-  .tickets__venue em {
-    font-size: 0.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .tickets__venue {
-    display: flex;
-    font-size: 0.8rem;
-  }
-}
-
-.tickets__button .btn-2 {
+.btn-2 {
   background-color: white;
   color: #ec5242;
   border: 1px solid #ec5242;
@@ -756,15 +726,72 @@ body {
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
+  margin-bottom: 1rem;
 }
 
-.tickets__button .btn-2:hover {
+.btn-2:hover {
   cursor: pointer;
   background-color: #ec5242;
   color: white;
   padding: 0.5rem 1.5rem;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  border: 1px solid #f5f5f5;
+  background-color: white;
+  grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ." ". . . .";
+  width: inherit;
+}
+
+.grid-container h4 {
+  padding: 0.2rem 2.5rem;
+}
+
+.grid-container .date {
+  font-size: 0.8rem;
+}
+
+.grid-container .date span {
+  font-size: 0.5rem;
+  padding-top: -1rem;
+}
+
+.grid-container .venue {
+  font-size: 0.8rem;
+}
+
+.radio {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  font-size: 0.7rem;
+  color: #ec5242;
+}
+
+.dark {
+  background-color: #a3a3a3;
+  border: 1px solid #fff;
+}
+
+.midark {
+  background-color: #ccc;
+  border: 1px solid #fff;
+}
+
+.light {
+  background-color: #ececec;
+  border: 1px solid #fff;
 }
 
 .about {
@@ -776,6 +803,7 @@ body {
 
 .about__brand {
   text-align: center;
+  word-wrap: break-word;
 }
 
 @media screen and (min-width: 768px) {
@@ -788,6 +816,7 @@ body {
   border-top: 1px solid #d3d3d3;
   max-width: 700px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -839,6 +868,20 @@ body {
   color: white;
 }
 
+@media screen and (min-width: 320px) {
+  .about-past__events-text {
+    font-size: 1.4rem;
+    padding-top: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-past__events-text {
+    font-size: 1rem;
+    padding-top: 1.4rem;
+  }
+}
+
 .about-top {
   text-align: center;
 }
@@ -869,9 +912,9 @@ body {
   padding: 1rem;
   margin-top: 2.5rem;
   border: 1px solid #f5f5f5;
-  width: 500px;
+  width: 320px;
 }
 
 .about-top__logo {
-  width: 30%;
+  width: 40%;
 }

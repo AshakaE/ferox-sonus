@@ -1,98 +1,114 @@
 .tickets {
   background-color: $color-primary-light;
 
-  &__body {
-    width: 100%;
-  }
-
   &__title {
+    padding: 0.4rem 1rem;
     border: 1px solid $color-tertiary;
-    padding: 0.3rem 1.2rem;
     border-radius: 50px;
-    margin-bottom: 2rem;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    font-size: 0.7rem;
   }
 
-  &__option {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    border-bottom: 1.5px solid $color-primary;
-    padding-bottom: 0.5rem;
-
-    div {
-      padding: 0.3rem 0;
-    }
-
-    @media screen and (min-width: $bp-desk) {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
+  &__container {
+    border: 4px solid transparent;
+    border-image: url("../assets/border-img.jpg") 30 round;
+    margin: 1.5rem 0;
   }
 
-  &__date {
-    color: $color-secondary;
+  &__item {
+    padding: 0 1.6rem;
+  }
+}
+
+.btn-2 {
+  background-color: white;
+  color: $color-secondary;
+  border: 1px solid $color-secondary;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  margin-bottom: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-secondary;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  border: 1px solid $color-primary-light;
+  background-color: white;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  width: inherit;
+
+  h4 {
+    padding: 0.2rem 2.5rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .date {
+    font-size: 0.8rem;
 
     span {
-      color: $color-tertiary;
-      font-size: 0.7rem;
-      padding-left: 1rem;
-
-      @media screen and (min-width: $bp-desk) {
-        font-size: 0.6rem;
-      }
-    }
-
-    @media screen and (min-width: $bp-desk) {
-      font-size: 0.8rem;
+      font-size: 0.5rem;
+      padding-top: -1rem;
     }
   }
 
-  &__venue {
-    font-weight: bold;
-
-    em {
-      color: $color-secondary;
-      font-weight: lighter;
-      font-size: 0.8rem;
-
-      @media screen and (min-width: $bp-desk) {
-        font-size: 0.6rem;
-      }
-    }
-
-    @media screen and (min-width: $bp-desk) {
-      display: flex;
-      font-size: 0.8rem;
-    }
+  .venue {
+    font-size: 0.8rem;
   }
+}
 
-  &__button {
-    .btn-2 {
-      background-color: white;
-      color: $color-secondary;
-      border: 1px solid $color-secondary;
-      padding: 0.5rem 1.5rem;
-      font-size: 0.8rem;
-      font-weight: bold;
-      transition: all 0.2s;
-      -webkit-transition: all 0.2s;
-      -moz-transition: all 0.2s;
-      -ms-transition: all 0.2s;
-      -o-transition: all 0.2s;
+.radio {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // background-color: yellow;
+}
 
-      &:hover {
-        cursor: pointer;
-        background-color: $color-secondary;
-        color: white;
-        padding: 0.5rem 1.5rem;
-        font-size: 0.8rem;
-        font-weight: bold;
-      }
-    }
-  }
+label {
+  font-size: 0.7rem;
+  color: $color-secondary;
+}
+
+.dark {
+  background-color: rgb(163, 163, 163);
+  border: 1px solid #fff;
+}
+
+.midark {
+  background-color: rgb(204, 204, 204);
+  border: 1px solid #fff;
+}
+
+.light {
+  background-color: rgb(236, 236, 236);
+  border: 1px solid #fff;
 }

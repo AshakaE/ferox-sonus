@@ -50,57 +50,63 @@
         <div class="main">
             <div class="main__organizers tickets">
                 <div class="main__program-heading">
-                    <h3>Select Tickets</h3>
+                    <h1>Select Tickets</h1>
                 </div>
                 <div class="tickets__info">
                     <div class="tickets__title">
                         <h4>Please select the event(s) you want to attend</h4>
                     </div>
                 </div>
-                <div class="tickets__body container">                   
-                    <div class="tickets__option">
-                        <div class="tickets__date">
-                            <p>May 21, &nbsp;2021 <span>Fri &bull; 7:00pm</span></p>
-                        </div>
-                        <div class="tickets__venue">
-                            <p>The O2 Arena – London, UK. <em>Performing Acts</em></p>
-                        </div>
-                        <div class="tickets__button">
-                            <button class="btn-2" type="button">See Tickets</button>
-                        </div>
+                    <div class="tickets__container">
+                        <div class="grid-container">
+                            <div class="dark"><h4>Date</h4></div>
+                            <div class="dark"><h4>Venue</h4></div>
+                            <div class="dark"><h4>Ticket</h4></div>
+                            <div class="dark"><h4>Meal</h4></div>
+                            <div class="midark"><p class="date">May 21 <br><span>7pm</span></p></div>
+                            <div class="midark"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio midark">
+                                <label for="ticket1">$179 </label>
+                                <input type="radio" name="ticket" id="ticket1">
+                            </div>
+                            <div class="radio midark">
+                                <label for="meal1">$19</label>
+                                <input type="radio" name="ticket" id="meal1">
+                            </div>
+                            <div class="light"><p class="date">May 22 <br><span>6pm</span></p></div>
+                            <div class="light"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio light">
+                                <label for="ticket2">$179</label>
+                                <input type="radio" name="ticket" id="ticket2">
+                            </div>
+                            <div class="radio light">
+                                <label for="meal2">$19</label>
+                                <input type="radio" name="ticket" id="meal2">
+                            </div>
+                            <div class="midark"><p class="date">May 23 <br><span>6pm</span></p></div>
+                            <div class="midark"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio midark">
+                                <label for="ticket3">$179</label>
+                                <input type="radio" name="ticket" id="ticket3">
+                            </div>
+                            <div class="radio midark">
+                                <label for="meal3">$19</label>
+                                <input type="radio" name="ticket" id="meal3">
+                            </div>
+                            <div class="light"><p class="date">May 21-23 <br><span>6pm</span></p></div>
+                            <div class="light"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio light">
+                                <label for="ticket4">$299</label>
+                                <input type="radio" name="ticket" id="ticket4">
+                            </div>
+                            <div class="radio light">
+                                <label for="meal4">$29</label>
+                                <input type="radio" name="ticket" id="meal4">
+                            </div>
+                        </div>    
                     </div>
-                    <div class="tickets__option">
-                        <div class="tickets__date">
-                            <p>May 22, &nbsp;2021 <span>Sat &bull; 6:00pm</span></p>
-                        </div>
-                        <div class="tickets__venue">
-                            <p>The O2 Arena – London, UK. <em>Featured artistes</em></p>
-                        </div>
-                        <div class="tickets__button">
-                            <button class="btn-2" type="button">See Tickets</button>
-                        </div>
-                    </div>
-                    <div class="tickets__option">
-                        <div class="tickets__date">
-                            <p>May 23, &nbsp;2021 <span>Sun &bull; 5:00pm</span></p>
-                        </div>
-                        <div class="tickets__venue">
-                            <p>The O2 Arena – London, UK. <em>Live bands</em></p>
-                        </div>
-                        <div class="tickets__button">
-                            <button class="btn-2" type="button">See Tickets</button>
-                        </div>
-                    </div>
-                    <div class="tickets__option">
-                        <div class="tickets__date">
-                            <p>May 21-23, &nbsp;2021 <span>6:00pm</span></p>
-                        </div>
-                        <div class="tickets__venue">
-                            <p>The O2 Arena – London, UK. <em>All events</em></p>
-                        </div>
-                        <div class="tickets__button">
-                            <button class="btn-2" type="button">See Tickets</button>
-                        </div>
+                    <div class="tickets__button">
+                        <button class="btn-2" type="button">Buy Ticket(s)</button>
                     </div>
                 </div>
             </div>
@@ -109,11 +115,10 @@
                         <img class="footer__logo-img" src="./assets/fesoroxxtxt.png" alt="fesoroxx footer">
                     </div>
                     <div class="footer__text">
-                        <h3>2020 Creative Commons Nigeria. Some rights reserved.</h3>
+                        <h2>2020 Creative Commons Nigeria. Some rights reserved.</h2>
                         <p>HTML Capstone Project Microverse</p>
                     </div>
             </footer>
         </div>
-    </div>
 </body>
 </html>
