@@ -54,6 +54,11 @@ body {
   color: #272a31;
 }
 
+.margin {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -108,6 +113,14 @@ body {
 @media screen and (max-width: 570px) {
   .footer__logo {
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    flex-direction: column;
+    height: inherit;
+    align-items: stretch;
   }
 }
 
