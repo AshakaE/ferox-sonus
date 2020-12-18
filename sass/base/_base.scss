@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  @media screen and (min-width: $bp-small) {
+    font-size: $default-font-small;
+  }
+
+  @media screen and (min-width: $bp-medium) {
+    font-size: $default-font-medium;
+  }
+
+  @media screen and (min-width: $bp-mobile) {
+    font-size: $default-font-size;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-tertiary;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}

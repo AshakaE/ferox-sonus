@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+</head>
+<body>
+    <main class="margin">
+        <nav class="navbar">
+            <div class="navbar__top">
+                <div class="navbar__top--icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <p>Login</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="navbar__bottom">
+                <div class="navbar__bottom--logo">
+                  <img src="./assets/fesoroxx.png" alt="fesoroxx-logo">  
+                </div>
+                <div class="navbar__bottom--links">
+                    <ul class="navbar__bottom--list">
+                        <li class="navbar__bottom--item"><a href="./index.html" class="navbar__bottom--link">Home</a></li>
+                        <li class="navbar__bottom--item"><a href="./tickets.html" class="navbar__bottom--link">Tickets</a></li>
+                        <li class="navbar__bottom--item"><a href="./about.html" class="navbar__bottom--link">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle" aria-label="none">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="./tickets.html" class="navigation__link"><span>02</span>Tickets</a></li>
+                    <li class="navigation__item"><a href="./about.html" class="navigation__link"><span>03</span>About</a></li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="main">
+            <section class="main__organizers tickets">
+                <div class="main__program-heading">
+                    <h1>Select Tickets</h1>
+                </div>
+                <div class="tickets__info">
+                    <div class="tickets__title">
+                        <h4>Please select the event(s) you want to attend</h4>
+                    </div>
+                </div>
+                    <div class="tickets__container">
+                        <div class="grid-container">
+                            <div class="dark"><h4>Date</h4></div>
+                            <div class="dark"><h4>Venue</h4></div>
+                            <div class="dark"><h4>Ticket</h4></div>
+                            <div class="dark"><h4>Meal</h4></div>
+                            <div class="midark"><p class="date">May 21 <br><span>7pm</span></p></div>
+                            <div class="midark"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio midark">
+                                <label for="ticket1">$179 </label>
+                                <input type="radio" name="ticket" id="ticket1">
+                            </div>
+                            <div class="radio midark">
+                                <label for="meal1">$19</label>
+                                <input type="radio" name="ticket" id="meal1">
+                            </div>
+                            <div class="light"><p class="date">May 22 <br><span>6pm</span></p></div>
+                            <div class="light"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio light">
+                                <label for="ticket2">$179</label>
+                                <input type="radio" name="ticket" id="ticket2">
+                            </div>
+                            <div class="radio light">
+                                <label for="meal2">$19</label>
+                                <input type="radio" name="ticket" id="meal2">
+                            </div>
+                            <div class="midark"><p class="date">May 23 <br><span>6pm</span></p></div>
+                            <div class="midark"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio midark">
+                                <label for="ticket3">$179</label>
+                                <input type="radio" name="ticket" id="ticket3">
+                            </div>
+                            <div class="radio midark">
+                                <label for="meal3">$19</label>
+                                <input type="radio" name="ticket" id="meal3">
+                            </div>
+                            <div class="light"><p class="date">May 21-23 <br><span>6pm</span></p></div>
+                            <div class="light"><p class="venue">The O2 Arena</p></div>
+                            <div class="radio light">
+                                <label for="ticket4">$299</label>
+                                <input type="radio" name="ticket" id="ticket4">
+                            </div>
+                            <div class="radio light">
+                                <label for="meal4">$29</label>
+                                <input type="radio" name="ticket" id="meal4">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="tickets__button">
+                        <button class="btn-2" type="button">Buy Ticket(s)</button>
+                    </div>
+                </section>
+            </div>
+        <footer class="footer">
+                    <div class="footer__logo">
+                        <img class="footer__logo-img" src="./assets/fesoroxxtxt.png" alt="fesoroxx footer">
+                    </div>
+                    <div class="footer__text">
+                        <h2>2020 Creative Commons Nigeria. Some rights reserved.</h2>
+                        <p>HTML Capstone Project Microverse</p>
+                    </div>
+        </footer>
+    </main>
+</body>
+</html>

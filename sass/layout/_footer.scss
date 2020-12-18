@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 200px;
+  padding: 2rem 1rem 0 1rem;
+
+  &__logo {
+    width: 50%;
+
+    @media screen and (max-width: $bp-medium) {
+      width: 30%;
+    }
+
+    &-img {
+      width: 200px;
+
+      @media screen and (min-width: $bp-small) {
+        width: 110px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 0.5rem;
+
+    @media screen and (min-width: $bp-small) {
+      padding-left: 0.2rem;
+      font-size: 0.45rem;
+    }
+  }
+}

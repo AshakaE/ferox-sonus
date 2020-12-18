@@ -1,0 +1,131 @@
+.about {
+  height: 80vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../assets/top-bg.jpg");
+  background-size: 100%;
+  background-position: center;
+
+  &__brand {
+    text-align: center;
+    word-wrap: break-word;
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+.about-past-img {
+  @media screen and (min-width: $bp-desk) {
+    display: flex;
+  }
+}
+
+.about-past {
+  border-top: 1px solid $color-primary;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media screen and (min-width: $bp-desk) {
+    display: flex;
+  }
+
+  &__desp {
+    margin-bottom: 1.5rem;
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
+
+  &__events {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: $bp-desk) {
+      padding: 0 1rem;
+    }
+
+    &-img1 {
+      background-image: linear-gradient(hsla(6, 82%, 59%, 0.712), hsla(6, 82%, 59%, 0.712)), url("../assets/spain.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: auto;
+      height: inherit;
+    }
+
+    &-img2 {
+      background-image: linear-gradient(hsla(6, 82%, 59%, 0.712), hsla(6, 82%, 59%, 0.712)), url("../assets/japan.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: auto;
+      height: inherit;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1rem;
+      padding-top: 1.8rem;
+      color: white;
+
+      @media screen and (min-width: $bp-small) {
+        font-size: 1.4rem;
+        padding-top: 2.3rem;
+      }
+
+      @media screen and (min-width: $bp-desk) {
+        font-size: 1rem;
+        padding-top: 1.4rem;
+      }
+    }
+  }
+}
+
+.about-top {
+  text-align: center;
+
+  &__text-2 {
+    text-align: center;
+  }
+
+  &__description {
+    background-color: white;
+    border: 1px solid $color-tertiary;
+  }
+
+  &__contact {
+    margin-top: 1rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+
+    p {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+
+  &__heading {
+    h3 {
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    border: 1px solid $color-primary-light;
+    width: 320px;
+  }
+
+  &__logo {
+    width: 40%;
+  }
+}

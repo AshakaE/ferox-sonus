@@ -1,0 +1,94 @@
+.main__program {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/second-bg.jpg");
+  background-size: 100%;
+  position: relative;
+  color: white;
+  overflow-x: hidden;
+
+  &-heading {
+    margin: 1rem 0;
+
+    h1,
+    h2 {
+      word-spacing: 0.3rem;
+      font-weight: 400;
+      font-size: 1.5rem;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 10px;
+        bottom: 0;
+        left: 25%;
+        border-bottom: 2px solid $color-secondary;
+      }
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+
+    &__icon {
+      padding: 0 1rem;
+      font-size: 1.3rem;
+
+      --fa-primary-color: white;
+      --fa-secondary-color: rgb(236, 82, 66);
+      --fa-secondary-opacity: 1;
+    }
+
+    &__header {
+      padding: 0 1rem;
+      color: $color-secondary;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+
+      @media screen and (min-width: $bp-desk) {
+        text-align: center;
+        line-height: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    &__text {
+      padding: 0 0.5rem;
+      font-size: 0.7rem;
+      line-height: 1.3rem;
+
+      @media screen and (min-width: $bp-desk) {
+        line-height: 1rem;
+        text-align: center;
+      }
+    }
+
+    &__1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 0;
+      flex-shrink: 1;
+      background-color: #ffffff1f;
+      margin-bottom: 1rem;
+
+      @media screen and (min-width: $bp-desk) {
+        flex-direction: column;
+        width: auto;
+        margin-right: 0.3rem;
+      }
+    }
+
+    @media screen and (min-width: $bp-desk) {
+      flex-direction: row;
+    }
+  }
+}
